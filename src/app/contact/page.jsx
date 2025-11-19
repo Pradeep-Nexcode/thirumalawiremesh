@@ -1,5 +1,6 @@
 "use client";
 
+import BusinessCards from "@/components/contacts/BusinessCards";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -139,11 +140,10 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-3 rounded-md font-semibold text-white transition ${
-                loading
+              className={`w-full py-3 rounded-md font-semibold text-white transition ${loading
                   ? "bg-gray-400 cursor-not-allowed"
                   : "bg-[#f48c1c] hover:bg-orange-600"
-              }`}
+                }`}
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
@@ -154,7 +154,7 @@ export default function ContactPage() {
       {/* Google Map */}
       <div className="w-full mt-10">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!...your-map..."
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458.8687839455805!2d78.17202677612185!3d12.180717458971984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac176aad242443%3A0x1d3a47f3609d42ca!2sThirumala%20Wiremesh!5e1!3m2!1sen!2sin!4v1737944872905!5m2!1sen!2sin"
           width="100%"
           height="450"
           style={{ border: 0 }}
@@ -162,6 +162,8 @@ export default function ContactPage() {
           loading="lazy"
         ></iframe>
       </div>
+
+      <BusinessCards />
     </div>
   );
 }

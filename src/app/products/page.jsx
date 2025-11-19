@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import EnquiryModal from "@/components/products/EnquiryModal";
+import Gallery from "@/components/contacts/Gallery";
 
 const products = [
   {
@@ -107,7 +108,9 @@ export default function ProductsPage() {
           close={() => setModalOpen(false)}
           productName={selectedProduct}
         />
+
       </div>
+
     </section>
   );
 }
