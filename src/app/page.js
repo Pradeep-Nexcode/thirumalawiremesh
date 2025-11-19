@@ -91,7 +91,7 @@ export default function HomePage() {
   };
 
   return (
-    <div>
+    <div className="px-5 md:px-10 xl:px-20">
       {/* LAUNCH SCREEN */}
       {launching && (
         <div className="flex flex-col items-center justify-center min-h-screen text-center px-6">

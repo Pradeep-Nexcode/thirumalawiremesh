@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="bg-white z-[9999999] shadow-md">
+      <nav className="bg-white z-[9999999] shadow-md px-5 md:px-10 xl:px-20">
         <div className="container mx-auto px-4 py-2 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center font-bold text-xl">

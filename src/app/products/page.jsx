@@ -43,7 +43,7 @@ export default function ProductsPage() {
   };
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16 px-5 md:px-10 xl:px-20">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Header */}
         <div className="text-center mb-12">

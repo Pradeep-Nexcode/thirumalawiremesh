@@ -38,7 +38,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="w-full flex flex-col items-start bg-[#F9FAFB] myPadX md:gap-8 py-16">
+    <div className="w-full flex flex-col items-start bg-[#F9FAFB] myPadX md:gap-8 px-5 md:px-10 xl:px-20 py-16">
 
       {/* Contact Section */}
       <div className="w-full grid md:grid-cols-2 gap-8 items-start md:p-8">
