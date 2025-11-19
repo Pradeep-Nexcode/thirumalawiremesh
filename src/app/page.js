@@ -11,7 +11,7 @@ import FAQ from "@/components/home/FAQ";
 
  
 export default function HomePage() {
-  const [launching, setLaunching] = useState(true);
+  const [launching, setLaunching] = useState(false);
   const [count, setCount] = useState(10);
   const [loading, setLoading] = useState(false);
 
@@ -127,14 +127,14 @@ export default function HomePage() {
       {!launching && (
         <div className="animate-fadeIn">
           {/* Include sections like your Blade file */}
-          {/* <Hero />
+          <Hero />
           <WhyChooseUs />
           <Products />
           <Testimonials />
-          <CallToAction /> */}
+          <CallToAction />
 
           {/* FAQ Example */}
-          <section className="p-6 max-w-3xl mx-auto">
+          {/* <section className="p-6 max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-white">FAQs</h2>
             {faqs.map((faq) => (
               <details
@@ -147,7 +147,8 @@ export default function HomePage() {
                 <p className="text-gray-400 mt-2">{faq.answer}</p>
               </details>
             ))}
-          </section>
+          </section> */}
+          <FAQ faqs={faqs} />
         </div>
       )}
     </div>
