@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white px-5 md:px-10 xl:px-20 text-gray-900`}
       >
         {/* Global Header */}
         <Header />
