@@ -91,7 +91,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="px-5 md:px-10 xl:px-20">
+    <div className="">
       {/* LAUNCH SCREEN */}
       {launching && (
         <div className="flex flex-col items-center justify-center min-h-screen text-center px-6">
@@ -125,7 +125,7 @@ export default function HomePage() {
 
       {/* MAIN CONTENT */}
       {!launching && (
-        <div className="animate-fadeIn">
+        <div className="animate-fadeIn ">
           {/* Include sections like your Blade file */}
           <Hero />
           <WhyChooseUs />

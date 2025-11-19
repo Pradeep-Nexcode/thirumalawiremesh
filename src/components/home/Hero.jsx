@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="flex items-center justify-center h-full relative z-10">
+      <div className="flex px-5 md:px-10 xl:px-20 items-center justify-center h-full relative z-10">
         <div className="text-center flex flex-col gap-3 px-6 md:w-9/12">
 
           {/* Main Heading */}
