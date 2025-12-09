@@ -141,8 +141,8 @@ export default function ContactPage() {
               type="submit"
               disabled={loading}
               className={`w-full py-3 rounded-md font-semibold text-white transition ${loading
-                  ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-[#f48c1c] hover:bg-orange-600"
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-[#f48c1c] hover:bg-orange-600"
                 }`}
             >
               {loading ? "Sending..." : "Send Message"}
