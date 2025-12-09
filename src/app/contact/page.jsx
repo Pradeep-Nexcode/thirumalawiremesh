@@ -164,6 +164,7 @@ export default function ContactPage() {
       </div>
 
       <BusinessCards />
+
     </div>
   );
 }

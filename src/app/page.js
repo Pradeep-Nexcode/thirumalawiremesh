@@ -8,8 +8,8 @@ import Products from "@/components/home/Products";
 import Testimonials from "@/components/home/Testimonials";
 import CallToAction from "@/components/home/CallToAction";
 import FAQ from "@/components/home/FAQ";
+import Gallery from "@/components/contacts/Gallery";
 
- 
 export default function HomePage() {
   const [launching, setLaunching] = useState(false);
   const [count, setCount] = useState(10);
@@ -19,7 +19,8 @@ export default function HomePage() {
   const faqs = [
     {
       id: 1,
-      question: "What is your return policy for defective or unwanted products?",
+      question:
+        "What is your return policy for defective or unwanted products?",
       answer:
         "Our return policy allows you to return defective or unwanted products within 30 days of purchase. To initiate a return, please contact our support team and provide your order number.",
     },
@@ -60,7 +61,7 @@ export default function HomePage() {
     setTimeout(() => clearInterval(interval), 60000); // 60 seconds
   };
 
-  // 🎉 Confetti animation  
+  // 🎉 Confetti animation
   const startConfetti = () => {
     const endTime = Date.now() + 15 * 1000;
 
@@ -96,7 +97,7 @@ export default function HomePage() {
       {launching && (
         <div className="flex flex-col items-center justify-center min-h-screen text-center px-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#f48c1c] animate-pulse">
-            🚀 We're Almost Ready!
+            🚀 We&apos;re Almost Ready!
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 mb-6">
@@ -131,6 +132,8 @@ export default function HomePage() {
           <WhyChooseUs />
           <Products />
           <Testimonials />
+          <Gallery />
+
           <CallToAction />
 
           {/* FAQ Example */}
